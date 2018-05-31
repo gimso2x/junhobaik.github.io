@@ -258,7 +258,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "_post"
+      path: ""
       type: posts
     values:
       layout: single
@@ -269,6 +269,8 @@ defaults:
       related: true
       # category: undefined
       toc: true
+      sidebar:
+        nav: "docs"
       
 # _docs
   - scope:
