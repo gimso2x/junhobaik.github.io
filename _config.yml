@@ -259,7 +259,7 @@ defaults:
   # _pages
   - scope:
       path: ""
-      type: pages
+      type: docs
     values:
       layout: single
       sidebar:
