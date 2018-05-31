@@ -1,16 +1,12 @@
 # docs
 docs:
-  - title: "Parent Page A"
+  - title: "reset"
     children:
       - title: "Child Page A1"
         url: /
       - title: "Child Page A2"
         url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-  - title: "Parent Page B"
+  - title: "Css"
     children:
       - title: "Child Page B1"
         url: /
@@ -22,7 +18,7 @@ docs:
         url: /
       - title: "Child Page B5"
         url: /
-  - title: "Parent Page C"
+  - title: "JQuery"
     children:
       - title: "Child Page C1"
         url: /
@@ -34,7 +30,7 @@ docs:
         url: /
       - title: "Child Page C5"
         url: /
-  - title: "Parent Page D"
+  - title: "Javascript"
     children:
       - title: "Child Page D1"
         url: /
