@@ -259,7 +259,7 @@ defaults:
   # _docs
   - scope:
       path: ""
-      type: docs
+      type: post
     values:
       layout: single
       read_time: false
