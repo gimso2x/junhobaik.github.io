@@ -1,3 +1,8 @@
+# main links
+main:
+  - title: "Tag"
+  - url: /tags/
+  
 # docs
 docs:
   - title: "reset"
