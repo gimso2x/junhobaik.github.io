@@ -10,17 +10,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko"
 title                    : 
-# title                    : "Dev.Hundred"
+# title                    : ""
 title_separator          : "-"
 name                     : 
-# name                     : "Junho Baik"
+# name                     : ""
 description              : 
-# description              : "A personal web for Junho Baik"
+# description              : ""
 url                      : 
-# url                      : "https://junhobaik.github.io"
+# url                      : ""
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : 
-# repository               : "junhobaik/junhobaik.github.io"
+# repository               : ""
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -111,7 +111,7 @@ author:
   facebook         :
   foursquare       :
   github           : 
-  github           : "https://github.com/gimso2x"
+  github           : "gimso2x"
   gitlab           :
   google_plus      :
   keybase          :
@@ -127,7 +127,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : # ""
 
 
 # Reading Files
