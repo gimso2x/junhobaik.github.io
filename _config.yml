@@ -94,14 +94,14 @@ analytics:
 # Site Author
 author:
   name             : 
-  # name             : "Junho Baik"
+  # name             : ""
   avatar           : 
   # avatar           : "/assets/images/profile.png"
   bio              : 
-  # bio              : "Junior Front-End Web Developer"
-  location         : "Korea"
+  # bio              : ""
+  # location         : "Korea"
   email            : 
-  # email            : "junhobaik@gmail.com"
+  # email            : ""
   uri              :
   home             : "#" # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -111,7 +111,7 @@ author:
   facebook         :
   foursquare       :
   github           : 
-  # github           : "junhobaik"
+  github           : "https://github.com/gimso2x"
   gitlab           :
   google_plus      :
   keybase          :
