@@ -9,6 +9,11 @@
 .sidebar {
   @include clearfix();
   margin-bottom: 1em;
+   
+&.sticky {
+   margin-top: -15px;
+   margin-bottom: -30px;
+ }
 
   @include breakpoint(max-width $large) {
     /* fix z-index order of follow links */
