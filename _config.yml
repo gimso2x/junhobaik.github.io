@@ -256,15 +256,19 @@ compress_html:
 
 # Defaults
 defaults:
-  # _docs
+  # _posts
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       layout: single
+      author_profile: true
       read_time: false
-      author_profile: false
-      share: false
-      comments: false
+      comments: true # true
+      share: true
+      related: true
+      # category: undefined
+      toc: true
       sidebar:
         nav: "docs"
+      
