@@ -6,8 +6,9 @@ main:
     url: /tags/
   # - title: "Category"
   #   url: /categories/
-  
-  docs:
+
+# docs
+docs:
   - title: "Parent Page A"
     children:
       - title: "Child Page A1"
