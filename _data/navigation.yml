@@ -7,7 +7,7 @@ main:
   # - title: "Category"
   #   url: /categories/
   
-  sidebar-sample:
+  docs:
   - title: "Parent Page A"
     children:
       - title: "Child Page A1"
