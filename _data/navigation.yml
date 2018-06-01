@@ -9,8 +9,8 @@ main:
 docs:
   - title: "reset"
     children:
-      - title: "Child Page A1"
-        url: /
+      - title: "reset.css"
+        url: /css/2018-06-01-css-reset.md
       - title: "Child Page A2"
         url: /
   - title: "Css"
