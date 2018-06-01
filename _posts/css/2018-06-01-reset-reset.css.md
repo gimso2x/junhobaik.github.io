@@ -1,4 +1,5 @@
 ---
+classes: wide
 title: 기본 reset.css
 date: 2018-06-01
 tags: reset
