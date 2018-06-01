@@ -26,25 +26,25 @@ HTML
 
 ```html
 <div class="wrap">
-      <ul>
-          <li>
-              <div>1</div>
-          </li>
-          <li>
-              <div>2</div>
-          </li>
-          <li>
-              <div>3</div>
-          </li>
-          <li>
-              <div>4</div>
-          </li>
-          <li>
-              <div>5</div>
-          </li>
-          <li>
-              <div>6</div>
-          </li>
-      </ul>
-  </div>
+    <ul>
+        <li>
+            <div>1</div>
+        </li>
+        <li>
+            <div>2</div>
+        </li>
+        <li>
+            <div>3</div>
+        </li>
+        <li>
+            <div>4</div>
+        </li>
+        <li>
+            <div>5</div>
+        </li>
+        <li>
+            <div>6</div>
+        </li>
+    </ul>
+</div>
 ```
