@@ -5,7 +5,7 @@ date: 2018-06-01
 tags: reset
 ---
 
-reset.css
+[reset.css](../postdata/reset.css)
 
 ```css
 @charset "utf-8";
