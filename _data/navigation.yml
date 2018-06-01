@@ -10,21 +10,21 @@ docs:
   - title: "RESET"
     children:
       - title: "기본 reset.css"
-        url: /reset-reset.css
+        url: /reset-reset
       - title: "산출물리스트 샘플"
-        url: /reset-filepath.html
+        url: /reset-filepath
   - title: "CSS"
     children:
       - title: "css 이용 모달"
-        url: /css-modal.html
+        url: /css-modal
       - title: "css 이용 div_list(동일간격)"
-        url: /css-div-list.html
+        url: /css-div-list
       - title: "css basic layout"
-        url: /css-basic-layout.html
+        url: /css-basic-layout
       - title: "css table form"
-        url: /css-table-form.html
+        url: /css-table-form
       - title: "css animation(깜빡임, 회전)"
-        url: /css-animation.html
+        url: /css-animation
   - title: "JQuery"
     children:
       - title: "Child Page C1"
