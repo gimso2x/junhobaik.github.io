@@ -9,10 +9,10 @@ main:
 docs:
   - title: "reset"
     children:
-      - title: "reset.css"
+      - title: "기본 reset.css"
         url: /reset-reset.css
-      - title: "Child Page A2"
-        url: /
+      - title: "산출물리스트 샘플"
+        url: /reset-filepath.html
   - title: "Css"
     children:
       - title: "Child Page B1"
