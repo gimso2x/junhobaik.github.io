@@ -1,4 +1,5 @@
 ---
+classes: wide
 title: 산출물리스트 샘플
 date: 2018-06-01
 tags: reset
