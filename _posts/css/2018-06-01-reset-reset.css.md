@@ -1,8 +1,7 @@
 ---
-title: CSS reset.css
+title: reset.css
 date: 2018-06-01
 tags: css
-category: css
 ---
 
 reset.css
