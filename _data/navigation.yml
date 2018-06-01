@@ -24,7 +24,7 @@ docs:
       - title: "css table form"
         url: /css-table-form.html
       - title: "css animation(깜빡임, 회전)"
-        url: /
+        url: /css-animation.html
   - title: "JQuery"
     children:
       - title: "Child Page C1"
