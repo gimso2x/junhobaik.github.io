@@ -262,7 +262,6 @@ defaults:
       type: pages
     values:
       layout: single
-      classes: wide
       sidebar:
         nav: "docs"
   # _posts
@@ -271,6 +270,5 @@ defaults:
       type: posts
     values:
       layout: single
-      classes: wide
       sidebar:
         nav: "docs"
