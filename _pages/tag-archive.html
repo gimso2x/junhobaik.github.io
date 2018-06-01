@@ -28,7 +28,7 @@ custom_by: "Junho Baik"
       <span class="entry-date">
         <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %d, %Y" }}</time>
       </span>
-      <a href="{{ post.baseurl }}">{{ post.title }}</a>
+      <a href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a>
       </li>
     {% endif %}{% endfor %}
   </ul>
