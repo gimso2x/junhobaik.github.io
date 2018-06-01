@@ -18,7 +18,7 @@ description              : "소스정리모음"
 # description              : ""
 url                      : 
 # url                      : ""
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : /wiki # the subpath of your site, e.g. "/blog"
 repository               : 
 # repository               : ""
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
