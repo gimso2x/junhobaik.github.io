@@ -7,7 +7,6 @@ tags: reset
 산출리스트 샘플 파일
 
 ```html
-
 <!DOCTYPE html>
 <html>
 
