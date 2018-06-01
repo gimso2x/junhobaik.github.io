@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css_div_list</title>
+    <style>
+        *{ margin: 0; padding: 0; box-sizing: border-box; }
+        ul,li{list-style: none;}
+
+        .wrap{width: 600px;margin: 0 auto; overflow: hidden;}
+        ul{background: black;margin:-10px;}
+        ul::after{content:'';clear: both;display: block;}
+        li{float:left;width:25%;padding: 10px;}
+        li>div{background: red;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul>
+            <li>
+                <div>1</div>
+            </li>
+            <li>
+                <div>2</div>
+            </li>
+            <li>
+                <div>3</div>
+            </li>
+            <li>
+                <div>4</div>
+            </li>
+            <li>
+                <div>5</div>
+            </li>
+            <li>
+                <div>6</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
