@@ -5,7 +5,7 @@ date: 2018-06-01
 tags: reset
 ---
 
-산출리스트 샘플 파일
+[산출리스트 샘플 파일](../postdata/filepath.html)
 
 ```html
 <!DOCTYPE html>
