@@ -10,7 +10,7 @@ docs:
   - title: "reset"
     children:
       - title: "reset.css"
-        url: /css/css-reset.md
+        url: /css/reset-reset.css
       - title: "Child Page A2"
         url: /
   - title: "Css"
