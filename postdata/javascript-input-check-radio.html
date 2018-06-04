@@ -1,0 +1,63 @@
+
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>자바스크립트</title>
+	<style type="text/css">
+		h1{font-size:25px;margin-bottom:30px;}
+		.section_box{margin-bottom:30px;}	
+	</style>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		// ======= 체크박스 모두체크 기능 ==========
+		$(function(){
+			//체크박스 모두동의
+			$('#total_agree').click(function() {
+				$('.agree2').prop('checked', this.checked);
+			});
+			//체크박스 모두 다 체크되면 위항목도 체크
+			$('.agree2').click(function(){
+				if($('.agree2').length == $('.agree2:checked').length){
+					$('#total_agree').prop('checked',true);
+				}else{
+					$('#total_agree').prop('checked',false);
+				}
+			});
+		});
+		
+
+		// ========= 라디오버튼 다시누를시 선택해제 ==========
+		$(document).on("click", "input[type='radio']", function(){
+			thisRadio = $(this);
+			if (thisRadio.hasClass("imChecked")) {
+				thisRadio.removeClass("imChecked");
+				thisRadio.prop('checked', false);
+			} else {
+				thisRadio.prop('checked', true);
+				thisRadio.addClass("imChecked");
+			};
+		})
+
+		
+	</script>
+</head>
+<body>
+	<div class="section_box">
+		<h1>체크박스 모두체크 기능</h1>
+		<input type="checkbox" id="total_agree" name="total_agree"><label for="total_agree">모두체크</label>
+
+		<input type="checkbox" class="agree2" name="check1">
+		<input type="checkbox" class="agree2" name="check2">
+		<input type="checkbox" class="agree2" name="check3">
+
+	</div>
+	
+	<div class="section_box">
+		<h1>라디오 다시체크시 해제</h1>
+		<input type="radio" name="a22" />
+		<input type="radio" name="a22" />
+		<input type="radio" name="a22" />
+	</div>	
+</body>
+</html>
