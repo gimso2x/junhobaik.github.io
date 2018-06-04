@@ -27,16 +27,56 @@ docs:
         url: /css-animation
   - title: "JQuery"
     children:
-      - title: "Child Page C1"
-        url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
+      - title: "jquery_tab"
+        url: /jquery_tab
+      - title: "jquery_tab2"
+        url: /jquery_tab2
+      - title: "jquery_gnb_1"
+        url: /jquery_gnb_1
+      - title: "jquery_gnb_2"
+        url: /jquery_gnb_2
+      - title: "jquery_checkbox"
+        url: /jquery_checkbox
+      - title: "jquery_mobile_gnb_pop(왼쪽)"
+        url: /jquery_mobile_gnb_pop_left
+      - title: "jquery_mobile_gnb_pop(오른쪽)"
+        url: /jquery_mobile_gnb_pop_right
+      - title: "jquery_img_selectoption"
+        url: /jquery_img_selectoption
+      - title: "jquery_modal(기존)"
+        url: /jquery_modal
+      - title: "jquery_modal2(플러그인)"
+        url: /jquery_modal2
+      - title: "jquery_select_ul_li(select모양 ul)"
+        url: /jquery_select_ul_li
+      - title: "jquery_familysite(footer)"
+        url: /jquery_familysite
+      - title: "jquery_timer-연장기능,시간끝나면 페이지이동"
+        url: /jquery_timer.html
+      - title: "jquery_tab_list_change"
+        url: /jquery_tab_list_change
+      - title: "jquery_datepicker_css"
+        url: /jquery_datepicker_css
+      - title: "jquery_simple_slide"
+        url: /jquery_simple_slide
+      - title: "jquery_animation_slide"
+        url: /jquery_animation_slide
+      - title: "jquery_gotop(맨위로)"
+        url: /jquery_gotop
+      - title: "jquery_isotpesample(포트폴리오메뉴전환-isotpe)"
+        url: /jquery_isotpesample
+      - title: "jquery_menuActive(스크롤위치에따라 top메뉴활성화)"
+        url: /jquery_menuActive
+      - title: "jquery_chartjs(기본샘플)"
+        url: /jquery_chartjs
+      - title: "jquery_qna(아코디언 기본샘플)"
+        url: /jquery_qna
+      - title: "jquery_qna(아코디언2)"
+        url: /jquery_qna2
+      - title: "jquery_onlyNumber(숫자만,radiovalue sum)"
+        url: /jquery_onlyNumber
+      - title: "jquery_scroll_fade(자지라 아래)"
+        url: /jquery_scroll_fade
   - title: "Javascript"
     children:
       - title: "javascript checkbox & radio"
