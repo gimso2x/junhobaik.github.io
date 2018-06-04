@@ -18,7 +18,7 @@ $(document).ready(function() {
       
       $item.siblings().removeClass('active');
       $item.siblings().next('ul').stop().slideUp('fast');
-   }
+   });
    
   // Sticky footer
   var bumpIt = function() {
