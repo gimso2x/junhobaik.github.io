@@ -7,10 +7,10 @@ tags: javascript
 
 [JAVASCRIPT input-check-radio](../postdata/javascript-input-check-radio.html)
 
-CSS
+JAVASCRIPT
 =====
 
-```script
+```javascript
 // ======= 체크박스 모두체크 기능 ==========
 $(function(){
   //체크박스 모두동의
