@@ -10,7 +10,7 @@ tags: javascript
 CSS
 =====
 
-```script
+```javascript
 // ======= 숫자 콤마 입력 ==========
 		function numberWithCommas(x) { // 숫자 3자리 단위마다 콤마 함수
 			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
