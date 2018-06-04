@@ -39,7 +39,7 @@ docs:
         url: /
   - title: "Javascript"
     children:
-      - title: "Child Page D1"
-        url: /
-      - title: "Child Page D2"
-        url: /
+      - title: "javascript-input-check-radio"
+        url: /javascript-input-check-radio
+      - title: "javascript-pccheck-number"
+        url: /javascript-pccheck-number
