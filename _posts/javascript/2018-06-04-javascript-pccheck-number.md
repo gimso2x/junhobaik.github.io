@@ -7,7 +7,7 @@ tags: javascript
 
 [JAVASCRIPT pccheck number](../postdata/javascript-pccheck-number.html)
 
-CSS
+JAVASCRIPT
 =====
 
 ```javascript
