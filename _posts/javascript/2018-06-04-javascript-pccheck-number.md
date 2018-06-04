@@ -2,7 +2,7 @@
 classes: wide
 title: JAVASCRIPT pccheck number
 date: 2018-06-04
-tags: css
+tags: javascript
 ---
 
 [JAVASCRIPT pccheck number](../postdata/javascript-pccheck-number.html)
