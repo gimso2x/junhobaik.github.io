@@ -12,29 +12,29 @@ JAVASCRIPT
 
 ```javascript
 // ======= 숫자 콤마 입력 ==========
-		function numberWithCommas(x) { // 숫자 3자리 단위마다 콤마 함수
-			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-		}
-		
-		$(function() {
-			var numberText = $('.numberConvert').text();
-			$('.numberConvert').text(numberWithCommas(numberText));
-		});
+function numberWithCommas(x) { // 숫자 3자리 단위마다 콤마 함수
+	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
-		// ========= 모바일, PC 구분 ==========
-		var isSmart = {
-			value: navigator.userAgent.match("iPhone|iPad|Android|Mobile|Windows CE|Windows Phone|Opera Mini") != null
-		};
-		
-		$(function() {
-        if(isSmart.value){ // 모바일일 경우
-        $('#pcsort').text('모바일입니다.');
-      }
+$(function() {
+	var numberText = $('.numberConvert').text();
+	$('.numberConvert').text(numberWithCommas(numberText));
+});
 
-      if(!isSmart.value){ // PC일 경우
-        $('#pcsort').text('PC입니다.');
-      }
-		});
+// ========= 모바일, PC 구분 ==========
+var isSmart = {
+	value: navigator.userAgent.match("iPhone|iPad|Android|Mobile|Windows CE|Windows Phone|Opera Mini") != null
+};
+
+$(function() {
+	if(isSmart.value){ // 모바일일 경우
+		$('#pcsort').text('모바일입니다.');
+	}
+
+	if(!isSmart.value){ // PC일 경우
+		$('#pcsort').text('PC입니다.');
+	}
+});
 ```
   
 HTML
