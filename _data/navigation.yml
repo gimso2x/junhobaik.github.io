@@ -65,7 +65,7 @@ docs:
         url: /jquery_gotop
       - title: "jquery_isotpesample(포트폴리오메뉴전환-isotpe)"
         url: /jquery_isotpesample
-      - title: "jquery_menuActive(스크롤위치에따라 top메뉴활성화)"
+      - title: "menuActive(스크롤위치에따라 top메뉴활성화)"
         url: /jquery_menuActive
       - title: "jquery_chartjs(기본샘플)"
         url: /jquery_chartjs
