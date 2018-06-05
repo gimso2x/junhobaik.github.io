@@ -419,6 +419,12 @@
   a {
     // color: inherit;
     font-weight: 400;
+    word-break: keep-all;
+    position: relative;
+  }
+
+  a::before {
+    content: "-";
   }
 
   .active {

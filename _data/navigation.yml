@@ -73,7 +73,7 @@ docs:
         url: /jquery_qna
       - title: "jquery_qna(아코디언2)"
         url: /jquery_qna2
-      - title: "onlyNumber(숫자만,radiovalue sum)"
+      - title: "onlyNumber (숫자만,radiovalue sum)"
         url: /jquery_onlyNumber
       - title: "jquery_scroll_fade(제자리,아래)"
         url: /jquery_scroll_fade
