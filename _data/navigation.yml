@@ -51,7 +51,7 @@ docs:
         url: /jquery_select_ul_li
       - title: "jquery_familysite(footer)"
         url: /jquery_familysite
-      - title: "jquery_timer-연장기능,시간끝나면 페이지이동"
+      - title: "연장기능,시간끝나면 페이지이동"
         url: /jquery_timer.html
       - title: "jquery_tab_list_change"
         url: /jquery_tab_list_change
@@ -63,9 +63,9 @@ docs:
         url: /jquery_animation_slide
       - title: "jquery_gotop(맨위로)"
         url: /jquery_gotop
-      - title: "jquery_isotpesample(포트폴리오메뉴전환-isotpe)"
+      - title: "(포트폴리오메뉴전환-isotpe)"
         url: /jquery_isotpesample
-      - title: "menuActive(스크롤위치에따라 top메뉴활성화)"
+      - title: "menuActive(스크롤위치)"
         url: /jquery_menuActive
       - title: "jquery_chartjs(기본샘플)"
         url: /jquery_chartjs
@@ -73,9 +73,9 @@ docs:
         url: /jquery_qna
       - title: "jquery_qna(아코디언2)"
         url: /jquery_qna2
-      - title: "jquery_onlyNumber(숫자만,radiovalue sum)"
+      - title: "onlyNumber(숫자만,radiovalue sum)"
         url: /jquery_onlyNumber
-      - title: "jquery_scroll_fade(자지라 아래)"
+      - title: "jquery_scroll_fade(제자리,아래)"
         url: /jquery_scroll_fade
   - title: "Javascript"
     children:
