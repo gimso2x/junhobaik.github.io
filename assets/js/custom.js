@@ -5,7 +5,7 @@
 $(document).ready(function() {
    //sidebar close script 18-06-04
    $('.nav__sub-title').click(function() {
-      $item = $(this);
+      $item = $(this).cloest('li');
       $target = $(this).next('ul');
       
       if($item.hasClass('active')) {
@@ -17,7 +17,7 @@ $(document).ready(function() {
       }
       
       $item.siblings().removeClass('active');
-      $item.siblings().next('ul').stop().slideUp('fast');
+      $item.siblings().find('ul').stop().slideUp('fast');
    });   
   
 });
