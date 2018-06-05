@@ -3,7 +3,6 @@
    ========================================================================== */
 
 $(document).ready(function() {
-    alert(11);
    //sidebar close script 18-06-04
    $('.nav__sub-title').click(function() {
       $item = $(this);
