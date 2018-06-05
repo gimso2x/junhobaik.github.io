@@ -6,7 +6,6 @@ $(document).ready(function() {
    //sidebar close script 18-06-04
    $('.nav__sub-title').click(function() {
       $item = $(this).closest('li');
-      $item = $(this).cloest('li');
       $target = $(this).next('ul');
       
       if($item.hasClass('active')) {
