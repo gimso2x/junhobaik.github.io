@@ -1,6 +1,6 @@
 ---
 classes: wide
-title: jquery_tab
+title: JQuery_tab
 date: 2018-06-08
 tags: jquery
 ---
@@ -108,7 +108,7 @@ HTML
 					<a href="javascript:void(0);">탭3</a>
 				</li>
 			</ul>
-
+ 
 			<div class="tab_content_wrap">
 				<div class="tab_content current">
 					contents1

@@ -1,0 +1,269 @@
+---
+classes: wide
+title: JQuery_tab
+date: 2018-06-08
+tags: jquery
+---
+
+[JQuery tab](../postdata/jquery_tab.html)
+
+CSS
+=====
+
+```css
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+.mySlides.active {display: block}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.stop{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+}
+
+.stop::after{
+    content:'';
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:5px;
+    background: #fff;
+}
+
+.pause{display: none !important;}
+
+.go{
+    cursor: pointer;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.6s ease;
+    width: 0px;height: 0px;
+    border-top:7px solid transparent;
+    border-bottom:7px solid transparent;
+    border-right: 14px solid none;
+    border-left: 14px solid #bbb;
+    margin-left:5px;
+}
+.go:hover{
+    border-left: 14px solid #717171;
+}
+
+.dot.active, .dot:hover, .stop:hover {
+background-color: #717171;
+}
+
+.control-nav{
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+```
+
+HTML
+=====
+
+```html
+<div class="slideshow-container">
+
+    <div class="mySlides fade active">
+        <div class="numbertext"></div>
+        <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+
+</div>
+<br>
+
+<div class="control-nav">
+    <span class="go"></span>
+    <span class="stop pause"></span>
+</div>
+```
+
+JAVASCRIPT
+=====
+
+```javascript
+<script>
+    $(function() {
+
+        var slide_time = 3000; //슬라이더 넘어가는시간
+        var _idx = 0;
+        var $mySlides = $('.mySlides'); //각 슬라이드
+        $mySlides.each(function(){
+            $('.control-nav').prepend('<span class="dot"></span>');
+        });
+        var $dot = $('.dot');
+        $dot.eq(0).addClass('active');
+        var intervalTime;
+        $('.numbertext').text((_idx+1) + ' / ' + $mySlides.length);
+
+        $('.prev').on('click',function(){
+            prevButton();
+        });
+
+        $('.next').on('click',function(){
+            nextButton();
+        });
+
+        $('.go').on('click',function(){
+            intervalTime = setInterval(function(){
+                nextButton();
+            }, slide_time);
+
+            $(this).addClass('pause').siblings().removeClass('pause');
+        });
+
+        $('.stop').on('click',function(){
+            animation_stop();
+
+            $(this).addClass('pause').siblings().removeClass('pause');
+        });
+
+        function animation_stop(){
+            clearInterval(intervalTime);
+        }
+
+        $dot.on('click',function(){
+            _idx = $dot.index(this);
+            showSlides(_idx);
+        })
+
+        function prevButton(){
+            if(_idx < 1){
+                _idx = $mySlides.length - 1;
+            }else{
+                _idx--;
+            }
+            showSlides(_idx);
+        }
+
+        function nextButton(){
+            if(_idx < $mySlides.length - 1){
+                _idx++;
+            }else{
+                _idx = 0;
+            }
+            showSlides(_idx);
+        }
+
+        function showSlides(n){
+            $dot.eq(n).addClass('active').siblings().removeClass('active');
+            $mySlides.eq(n).addClass('active').siblings().removeClass('active');
+            $('.numbertext').text((n+1) + ' / ' + $mySlides.length);
+        }
+
+    });
+</script>
+```
