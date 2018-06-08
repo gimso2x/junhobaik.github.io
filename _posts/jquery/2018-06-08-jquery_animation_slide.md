@@ -1,11 +1,11 @@
 ---
 classes: wide
-title: JQuery_tab
+title: JQuery_animation_slide
 date: 2018-06-08
 tags: jquery
 ---
 
-[JQuery tab](../postdata/jquery_tab.html)
+[JQuery animation_slide](../postdata/jquery_animation_slide.html)
 
 CSS
 =====
