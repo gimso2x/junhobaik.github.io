@@ -98,20 +98,24 @@ HTML
 	<div class="tab_wrap">
 		<div class="tab">
 			<ul class="tab_menu">
-				<li class="current"><a href="javascript:void(0);">탭1</a></li>
-				<li><a href="javascript:void(0);">탭2</a></li>
-				<li><a href="javascript:void(0);">탭3</a></li>
+				<li class="current">
+					<a href="javascript:void(0);">탭1</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">탭2</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">탭3</a>
+				</li>
 			</ul>
 
 			<div class="tab_content_wrap">
 				<div class="tab_content current">
 					contents1
 				</div>
-
 				<div class="tab_content">
 					contents2
 				</div>
-
 				<div class="tab_content">
 					contents3
 				</div>
@@ -124,20 +128,24 @@ HTML
 	<div class="tab_wrap2">
 		<div class="tab">
 			<ul class="tab_menu">
-				<li class="current"><a href="javascript:void(0);">탭1</a></li>
-				<li><a href="javascript:void(0);">탭2</a></li>
-				<li><a href="javascript:void(0);">탭3</a></li>
+				<li class="current">
+					<a href="javascript:void(0);">탭1</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">탭2</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">탭3</a>
+				</li>
 			</ul>
 
 			<div class="tab_content_wrap">
 				<div class="tab_content current">
 					contents1
 				</div>
-
 				<div class="tab_content">
 					contents2
 				</div>
-
 				<div class="tab_content">
 					contents3
 				</div>
