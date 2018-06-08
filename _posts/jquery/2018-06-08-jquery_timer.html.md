@@ -1,8 +1,16 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="utf-8" />
-<title> timer</title>
+---
+classes: wide
+title: jquery_timer.html
+date: 2018-06-08
+tags: jquery
+---
+
+[JQuery timer](../postdata/jquery_timer.html)
+
+CSS
+=====
+
+```css
 <style type="text/css">
 	*{margin:0;padding:0;}
 	a{text-decoration:none;}
@@ -17,7 +25,12 @@
 	.timeout_area .btn_area{text-align:center;margin:15px 0;}
 	.btn{display:inline-block; height:25px; padding: 0 14px 0; border:1px solid #304a8a; background:#3f5a9d; font-size:13px; color:#fff; line-height:25px;}
 </style>
-<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+```
+
+JAVASCRIPT
+=====
+
+```javascript
 <script type="text/javascript">
 	var LOGIN_INIT_TIME = 1 * 60;			// 10분
 	var LOGIN_ALARM_OPEN_TIME = 60;	// 1분
@@ -109,20 +122,23 @@
 	}
 
 </script>
-</head>
-<body>
-	<div id="logIn_wrap">
-		<div class="login_area">
-			<span class="login_timer" id="login_text">10분 0초</span><a href="javascript:void(0);" class="login_continue" onclick="_loginAreaGoKeep(); return false;">[연장]</a>
-		</div>
+```
+  
+HTML
+=====
 
-		<div class="timeout_area" id="login_timeout">
-			<p>자동 로그아웃 예정입니다. 남은시간 <span id="login_timeout_text">60</span> 초</p>
-			<div class="btn_area">
-				<a href="javascript:void(0);" class="btn" onclick="_loginAreaGoKeep(); return false;">로그인 연장</a>
-				<a href="javascript:void(0);" class="btn" onclick="_logOut(); return false;">로그아웃</a>
-			</div>
+```html
+<div id="logIn_wrap">
+	<div class="login_area">
+		<span class="login_timer" id="login_text">10분 0초</span><a href="javascript:void(0);" class="login_continue" onclick="_loginAreaGoKeep(); return false;">[연장]</a>
+	</div>
+
+	<div class="timeout_area" id="login_timeout">
+		<p>자동 로그아웃 예정입니다. 남은시간 <span id="login_timeout_text">60</span> 초</p>
+		<div class="btn_area">
+			<a href="javascript:void(0);" class="btn" onclick="_loginAreaGoKeep(); return false;">로그인 연장</a>
+			<a href="javascript:void(0);" class="btn" onclick="_logOut(); return false;">로그아웃</a>
 		</div>
 	</div>
-</body>
-</html>
+</div>
+```
