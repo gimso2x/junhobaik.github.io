@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jquery_tab</title>
+    <link rel="stylesheet" href="https://gimso2x.github.io/wiki/postdata/reset.css">
+    <style>
+        .wrap { width: 600px; margin: 10px auto; }
+        h1{font-size: 30px;margin-bottom: 20px;color:#000;}
+        hr{margin: 30px 0;}
+
+     
+        /* ============= 탭2 접근성 CSS ============= */
+        .tab{position: relative;}
+        .tab .tab_menu:after { content: ""; display: block; min-height: 100px; line-height: 0; clear: both; }
+
+        /* 탭 - 탭메뉴  */
+        .tab .tab_menu>li { float: left; width: 33.3333%; }
+        .tab .tab_menu>li:first-child>a { margin-left: 0;}
+        .tab .tab_menu>li>a {
+            display: block;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+            cursor: pointer;
+            border: 1px solid #666;
+            margin-left: -1px;
+        }
+
+        /* 탭 - 탭메뉴 - current 활성화 */
+        .tab ul.tab_menu>li.current a { font-weight: bold; border: 1px solid red; z-index: 1; }
+
+
+        /* 탭 - 탭내용 */
+        .tab .tab_content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            top:45px;
+            left:0;
+            padding: 6px 12px;
+            border: 1px solid #666;
+            min-height: 100px;
+            margin-top: 10px;
+        }
+        .tab .tab_content::after{clear: both;display: block;content:'';}
+
+        /* 탭 - 탭내용 - current 활성화 */
+        .tab ul.tab_menu>li.current .tab_content{display: block;}
+
+        /* //============= 탭2 접근성 CSS =============// */
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+			$('.tab_wrap3').waTabMenu();
+			$('.tab_wrap4').waTabMenu();
+
+        });//$(function()  end
+
+		$.fn.waTabMenu = function(){
+			 this.each(function(){
+                var $tab_menu = $(this).find('ul.tab_menu>li');
+
+                $tab_menu.on('click',function(e) {
+                    e.preventDefault();
+
+                    // tab_menu
+                    $(this).addClass('current').siblings().removeClass('current');
+                });
+            });
+		}
+	    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 탭2 -->
+        <h1>탭2 - 접근성(ul&lt;li)</h1>
+
+        <div class="tab_wrap3">
+			<div class="tab">
+				<ul class="tab_menu">
+					<li class="current">
+						<a href="javascript:void(0);">탭1</a>
+						<div class="tab_content">
+							contents1
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">탭2</a>
+						<div class="tab_content">
+							contents2
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">탭3</a>
+						<div class="tab_content">
+							contents3
+						</div>
+					</li>
+				</ul>
+			</div>
+        </div>
+
+		<hr />
+
+		<div class="tab_wrap4">
+			<div class="tab">
+				<ul class="tab_menu">
+					<li class="current">
+						<a href="javascript:void(0);">탭1</a>
+						<div class="tab_content">
+							contents1
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">탭2</a>
+						<div class="tab_content">
+							contents2
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0);">탭3</a>
+						<div class="tab_content">
+							contents3
+						</div>
+					</li>
+				</ul>
+			</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

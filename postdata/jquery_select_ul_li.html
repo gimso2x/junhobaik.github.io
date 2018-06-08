@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>test</title>
+    <style tyle="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        footer .family_site { display: inline-block; *display: inline; zoom: 1; position: relative; margin: 20px 0 24px; vertical-align: top; text-align: left; }
+        footer .family_site>a { display: inline-block; *display: inline; zoom: 1; width: 250px; height: 38px; line-height: 38px; padding-left: 15px; border: 1px solid #ccc; background: url(../img/bg_familysite.png) no-repeat 95% -37px; text-decoration: none;font-size: 14px;}
+        footer .family_site.on>a { border: 1px solid #e9002d; background-position: 95% 16px }
+        footer .family_site .fm_list { display: none; position: absolute; bottom: 38px; right: 0; width: 250px; border: 1px solid #ccc; border-bottom: 0; background: #fff }
+        footer .family_site .fm_list a { display: block; padding: 9px 0 9px 15px }
+        footer .family_site .fm_list .fm_btm { background: url(../img/bg_familysite_line.png) no-repeat center 0 }
+        footer .family_site.on .fm_list { display: block }
+        footer .family_site .fm_list a:hover, footer .family_site .fm_list a:focus { background: #ea002c; color: #fff; text-decoration: none }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var footFunc = function() {
+            $('#footer').find('.family_site > a').on('click', function(e) {
+                $(this).parent().toggleClass('on');
+                e.preventDefault();
+            });
+        }
+        footFunc();
+    });
+    </script>
+</head>
+
+<body>
+    <footer id="footer">
+        <div style="margin-top:600px;">
+        <div class="family_site">
+            <a href="#">Family Site</a>
+            <ul class="fm_list">
+                <li><a href="https://lora.sktiot.com/main/index.do" target="_blank" title="새창이동">IoT Portal</a></li>
+                <li><a href="http://www.tworld.co.kr" target="_blank" title="새창이동">T world</a></li>
+                <li><a href="http://www.sktelecom.com" target="_blank" title="새창이동">SK Telecom</a></li>
+                <li class="fm_btm"><a href="https://developers.sktelecom.com" target="_blank" title="새창이동">T developers</a></li>
+                <li><a href="https://www.sktsmarthome.com/html/services.html" target="_blank" title="새창이동">Smart Home</a></li>
+                <li><a href="https://metatron.sktelecom.com/" target="_blank" title="새창이동">Metatron</a></li>
+                <li><a href="http://www.smartinsight.co.kr/member/loginForm.do" target="_blank" title="새창이동">Smart Insight</a></li>
+                <li><a href="http://www.nugu.co.kr/main" target="_blank" title="새창이동">NUGU</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
