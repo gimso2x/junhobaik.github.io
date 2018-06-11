@@ -1,11 +1,11 @@
 ---
 classes: wide
-title: JQuery_chartjs
+title: JQuery_mobile_gnb_pop_left
 date: 2018-06-11
 tags: jquery
 ---
 
-[JQuery chartjs](../postdata/jquery_chartjs.html)
+[JQuery mobile_gnb_pop_left](../postdata/jquery_mobile_gnb_pop_left.html)
 
 CSS
 =====
