@@ -12,30 +12,30 @@ JAVASCRIPT
 
 ```javascript
 $(function () {
-        //#checkAll,#checkAll2 : 전체 체크하는 체크박스 ID
-        //chekcs,checks2 : 밑에 체크박스들 Class
-        $('#checkAll').checkAll('checks');
-        $('#checkAll2').checkAll('checks2');
+    //#checkAll,#checkAll2 : 전체 체크하는 체크박스 ID
+    //chekcs,checks2 : 밑에 체크박스들 Classs
+    $('#checkAll').checkAll('checks');
+    $('#checkAll2').checkAll('checks2');
+});
+
+$.fn.checkAll = function (checks) {
+    var $checkAll = this;
+    var $checks = $('.' + checks);
+
+    // 모두 동의 체크박스 클릭시
+    this.click(function () {
+        $checks.prop('checked', this.checked);
     });
 
-    $.fn.checkAll = function (checks) {
-        var $checkAll = this;
-        var $checks = $('.' + checks);
-
-        // 모두 동의 체크박스 클릭시
-        this.click(function () {
-            $checks.prop('checked', this.checked);
-        });
-
-        // 하부 체크박스 클릭시
-        $checks.click(function () {
-            if ($checks.length == $('.' + checks + ':checked').length) {
-                $checkAll.prop('checked', true);
-            } else {
-                $checkAll.prop('checked', false);
-            }
-        });
-    };
+    // 하부 체크박스 클릭시
+    $checks.click(function () {
+        if ($checks.length == $('.' + checks + ':checked').length) {
+            $checkAll.prop('checked', true);
+        } else {
+            $checkAll.prop('checked', false);
+        }
+    });
+};
 ```
 
 HTML

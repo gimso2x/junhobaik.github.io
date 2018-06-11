@@ -1,6 +1,6 @@
 ---
 classes: wide
-title: jquery_timer.html
+title: JQuery_timer
 date: 2018-06-08
 tags: jquery
 ---
