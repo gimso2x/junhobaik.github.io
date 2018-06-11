@@ -6,6 +6,7 @@ tags: jquery
 ---
 
 [JQuery datepicker_css](../postdata/jquery_datepicker_css.html)
+**JQuery UI 사용**
 
 CSS
 =====
