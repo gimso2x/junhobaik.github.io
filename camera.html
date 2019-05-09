@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		td {width: 100px;height: 100px;border: 1px solid black;}
+	</style>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>카메라</h1>
+	<input type="file" accept="image/*;capture=camera">
+	<input type="file" accept="image/*" capture="camera">
+	<h1>오디오</h1>
+	<input type="file" accept="audio/*;capture=microphone"> 
+	<input type="file" accept="audio/*" capture="microphone"> 
+
+	<h1>오디오2</h1>
+	<input type="file" accept="audio/*" capture="microphone" id="recorder">
+	<audio id="player" controls></audio>
+	<script>
+	  var recorder = document.getElementById('recorder');
+	  var player = document.getElementById('player')'
+
+	  recorder.addEventListener('change', function(e) {
+		var file = e.target.files[0];
+		// Do something with the audio file.
+		player.src =  URL.createObjectURL(file);
+	  });
+	</script>
+</body>
+</html>
